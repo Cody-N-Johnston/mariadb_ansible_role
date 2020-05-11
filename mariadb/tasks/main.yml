@@ -1,0 +1,4 @@
+---
+# tasks file for MariaDB 
+- name: Add tasks for OS
+  include_tasks: "{{ ansible_os_family }}.yml"
