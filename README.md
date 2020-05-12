@@ -15,7 +15,7 @@ Role Variables
 
 Available variables (`vars/main.yml`) are listed here alongside default values (`defaults/main.yml`)
 
-####vars
+#### vars  
 `mariadb_version`  
 By default the lastest version is used (10.4 at the time of writing). However, you may include this variable with a major version specified.  
 `mysql_packages`  
@@ -26,11 +26,12 @@ Dependencies
 
 Example Playbook
 ----------------
-
+```
    - hosts: default
      become: yes
      roles:
        - { role: mariadb, mariadb_version: '10.4' }
+```
 
 License
 -------
